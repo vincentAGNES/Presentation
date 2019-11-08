@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Resume Vincent AGNES</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="Content/resume.css">
+    <link rel="stylesheet" href="Content/photo.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Vincent AGNES</h1>
+        <p> Ingénieur diplomé IMT ATlantique promo 2020 </p>
+    </header>
+    
+    <section>
+        <div class="photo sepia">
+        	<a class="lightbox" href="#dog">
+            <img src="img/photo_CV.jpg" alt="Ma photo de profil">
+            </a> 
+        </div>
+
+		<div class="lightbox-target" id="dog">
+		   <img src="img/photo_CV.jpg" >
+		   <a class="lightbox-close" href="#"></a>
+		</div>
+
+        <div class="prez" onclick="showOrHide('information')" clicked="no">
+            <h2><a id="top" href="#"> Qui suis-je ?</a></h2>
+            <div id="information"></div>
+        </div>
+
+        <div class="contact" onclick="showOrHide('information2')" clicked="no">
+            <h2><a id="top2" href="#"> Informations de contact </a></h2>
+            <div id="information2"></div>
+        </div>
+    </section>
+    
+    <section>
+        <h2> Mes projets en Master 1 à EURECOM </h2>
+
+        <div class="exp">
+            <div class="exp-info">
+                <h3> House Pricing </h3>
+                <h4> Machine learning </h4>
+            </div>
+            <div class="exp-desc">
+                <p> J'ai pris part au fameux challenge KAGGLE qui vise à prévoir le prix d'une maison en utilisant des techniques de machine learning. </p>
+                <a id="housep" href="HTMLdocs/house_pricing_regression.html" download> Voir mon Notebook </a>
+            </div>
+        </div>
+
+        <div class="exp">
+        	<div class="exp-info">
+	            <h3> Image classification </h3>
+	            <h4> Deep learning </h4>  
+	        </div>          
+            <div class="exp-desc">
+                <p> En collaboration avec un autre étudiant, nous avons implémenté un réseau de neurone profond visant à classifier des images de planquetons. </p>
+                <a id="plankton" href="HTMLdocs/plankton_classification.html" download> Voir mon Notebook </a>
+            </div>
+        </div>
+
+    </section>    
+</body>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+	document.getElementById('information').clicked = "no";
+	document.getElementById('information2').clicked = "no";
+  	function showOrHide(id) {
+
+	    if (document.getElementById(id).clicked == "no"){
+	      document.getElementById(id).clicked = "yes";
+	      if (id == 'information'){
+	      html = "<p> Titulaire d'un diplome d'ingénieur IMT Atlantique avec une spécialisation en Data Science, j'ai également des connaissances en développement web. J'effectue actuellement mon stage de fin d'étude à Bureau Veritas en tant qu'apprenti data scientist.</p><a href="+'"HTMLdocs/CV.pdf"'+"download> Voir mon CV</a>"
+	      $( html ).appendTo($(document.getElementById(id)))}
+	      if (id == 'information2'){
+	      	html2='<p><b>Nom</b> : Vincent AGNES<br><b>Adresse</b> :319 Quai Michel Chalard 01120 La Boisse<br><b>Téléphone</b> :+33 6 01 45 47 46<br><b>Mail </b>: vincentagnes01@gmail.com<br><b>Permis</b> :B véhiculé</p>'
+	      	$( html2 ).appendTo($(document.getElementById(id)))}
+	      else{}
+	    }
+	    else {
+	      $(document.getElementById(id)).empty();
+	      document.getElementById(id).clicked = "no";
+		}
+  	}
+</script>

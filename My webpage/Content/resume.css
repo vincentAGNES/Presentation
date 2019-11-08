@@ -1,0 +1,182 @@
+/*STYLES GENERAUX*/
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/*HEADER */
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-image: url("../img/sand.jpg") ;
+    box-shadow: 0px 0px 15px #333;
+    filter: grayscale(80%);
+}
+
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+header h1,header p{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 10px;*/
+}
+
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2, section h3{
+    margin: 20px 0;   
+    color:black;
+}
+
+section > div{
+    width: 90%;
+}
+
+
+
+/*SECTION INFOS*/
+
+.prez{
+    border-bottom: 2px dashed #ccc;
+    text-align: center;
+}
+.prez a, .contact a, .exp-desc a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: black;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.prez p, .contact p{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: black;
+}
+.prez h2, .contact h2{
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+
+}
+
+
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.exp-info{
+    text-align: center;
+    color: black;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    
+    
+}
+
+#top {background-color:#98AFC7;}
+#top:hover{
+    color:black;
+    background-color: #737CA1;
+    border:none;
+    box-shadow: none
+}
+#top2 {background-color:#98AFC7;}
+#top2:hover{
+    color:black;
+    background-color: #737CA1;
+    border:none;
+    box-shadow: none
+}
+
+#housep, #plankton{background-color:#8BB381;}
+#housep:hover{
+    color:black;
+    background-color: #C3FDB8;
+    border:none;
+    box-shadow: none;
+    text-align: center;
+}
+
+#plankton:hover{
+    color:black;
+    background-color: #C3FDB8;
+    border:none;
+    box-shadow: none;
+    text-align: center;
+}
