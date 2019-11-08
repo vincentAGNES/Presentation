@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
+
 <head>
     <title>Resume Vincent AGNES</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="Content/resume.css">
     <link rel="stylesheet" href="Content/photo.css">
     
@@ -47,7 +49,7 @@
             </div>
             <div class="exp-desc">
                 <p> J'ai pris part au fameux challenge KAGGLE qui vise à prévoir le prix d'une maison en utilisant des techniques de machine learning. </p>
-                <a id="housep" href="docs/house_pricing_regression.html" download> Voir mon Notebook </a>
+                <a id="housep" href="HTMLdocs/house_pricing_regression.html" download> Voir mon Notebook </a>
             </div>
         </div>
 
@@ -58,7 +60,7 @@
 	        </div>          
             <div class="exp-desc">
                 <p> En collaboration avec un autre étudiant, nous avons implémenté un réseau de neurone profond visant à classifier des images de planquetons. </p>
-                <a id="plankton" href="docs/plankton_classification.html" download> Voir mon Notebook </a>
+                <a id="plankton" href="HTMLdocs/plankton_classification.html" download> Voir mon Notebook </a>
             </div>
         </div>
 
@@ -75,7 +77,7 @@
 	    if (document.getElementById(id).clicked == "no"){
 	      document.getElementById(id).clicked = "yes";
 	      if (id == 'information'){
-	      html = "<p> Titulaire d'un diplome d'ingénieur IMT Atlantique avec une spécialisation en Data Science, j'ai également des connaissances en développement web. J'effectue actuellement mon stage de fin d'étude à Bureau Veritas en tant qu'apprenti data scientist.</p><a href="+'"docs/CV.pdf"'+"download> Voir mon CV</a>"
+	      html = "<p> Titulaire d'un diplome d'ingénieur IMT Atlantique avec une spécialisation en Data Science, j'ai également des connaissances en développement web. J'effectue actuellement mon stage de fin d'étude à Bureau Veritas en tant qu'apprenti data scientist.</p><a href="+'"HTMLdocs/CV.pdf"'+"download> Voir mon CV</a>"
 	      $( html ).appendTo($(document.getElementById(id)))}
 	      if (id == 'information2'){
 	      	html2='<p><b>Nom</b> : Vincent AGNES<br><b>Adresse</b> :319 Quai Michel Chalard 01120 La Boisse<br><b>Téléphone</b> :+33 6 01 45 47 46<br><b>Mail </b>: vincentagnes01@gmail.com<br><b>Permis</b> :B véhiculé</p>'
