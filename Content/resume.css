@@ -136,9 +136,7 @@ section > div{
         padding-left: 20px;
         margin-right: auto;
     }
-    .prez a{
-        border: 2px solid transparent;
-    }
+    
     .prez a:hover{
         color: #f28835;
         background-color: #fff;
