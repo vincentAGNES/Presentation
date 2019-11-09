@@ -12,7 +12,7 @@ document.getElementById('information').clicked = "no";
 
 	  		}
 	      if (id == 'information2'){
-		      	html2='<p><b>Nom</b> : Vincent AGNES<br><b>Adresse</b> :319 Quai Michel Chalard 01120 La Boisse<br><b>Téléphone</b> :+33 6 01 45 47 46<br><b>Mail </b>: vincentagnes01@gmail.com<br><b>Permis</b> :B véhiculé</p>'
+		      	html2='<p><b>Nom</b> : Vincent AGNES<br><b>Adresse</b> :XX XX XX 01120 La Boisse<br><b>Téléphone</b> :+33 6 01 45 XX XX<br><b>Mail </b>: vincentagnes01@gmail.com<br><b>Permis</b> :B véhiculé</p>'
 		      	$( html2 ).appendTo($(document.getElementById(id)))
 		      	document.getElementById('contact').title = "Cacher cette section";
 	      }
